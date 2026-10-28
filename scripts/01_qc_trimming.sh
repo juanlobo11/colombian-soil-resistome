@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 # ---------------------------------------------------------------------------
 # Script: 01_qc_trimming.sh
-# Description: Quality control and adapter trimming for WGS paired-end reads.
+# Description: Quality control and adapter trimming for Shotgun Metagenomic paired-end reads.
 # Tools: Trimmomatic
 # ---------------------------------------------------------------------------
 
