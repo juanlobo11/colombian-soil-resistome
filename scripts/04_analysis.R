@@ -22,7 +22,7 @@ tsv_files <- list.files(path = results_dir, pattern = "\\.tsv$", full.names = TR
 
 # 3. Función para cargar y etiquetar cada muestra
 load_abricate_file <- function(filepath) {
-  sample_id <- str_remove(basename(filepath), "_card\\.tsv")
+  sample_id <- str_remove(basename(filepath), "_(card|resfinder|ncbi)\\.tsv")
   read_tsv(filepath, show_col_types = FALSE) %>%
     mutate(BioSample = sample_id)
 }
